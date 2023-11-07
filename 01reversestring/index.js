@@ -13,10 +13,19 @@
 //     return reversedString
 // }
 
-function reverse (str) {
+// function reverse (str) {
+//     const reversedString = str.split('').reduce((accum,currentChar,index,arr)=>{
+//         return currentChar+accum
+//     },'')
+//     return reversedString
+// }
 
-    const reversedString = str.split('').reduce((arr,char)=>char+rev)
-    console.log(reversedString)
+
+function reverse (str) {
+    let reversedString = ''
+    for(const char of str) {
+        reversedString = char + reversedString
+    }
     return reversedString
 }
 reverse("MARK")
