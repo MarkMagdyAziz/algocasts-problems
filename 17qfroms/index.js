@@ -14,6 +14,14 @@
 
 const Stack = require('./stack');
 
-class Queue {}
+class Queue {
+    constructor(s1,s2){
+        this.stack1 = new Stack(s1)
+        this.stack2 = new Stack(s2)
+
+        console.log(this.stack1)
+        console.log(this.stack2)
+    }
+}
 
 module.exports = Queue;
